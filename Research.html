@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Research</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="include/pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="nav">
+<h2 id="mark-chiew">Mark Chiew</h2>
+<p><a href="index.html">Home</a> <a href="Group.html">Group</a> <a
+href="Publications.html">Publications</a> <a
+href="Research.html">Research</a> <a href="Teaching.html">Teaching</a>
+<a href="Tools.html">Tools</a> <a
+href="Visualisations.html">Visualisations</a></p>
+<h2 id="curriculum-vitae">Curriculum Vitae</h2>
+<p><a href="CV.html">CV (html)</a> <a href="docs/CV-mchiew.pdf">CV
+(pdf)</a> <a
+href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
+Scholar</a> <a
+href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%20Name%5D%20AND%20(Toronto%5BAffiliation%5D%20OR%20Oxford%5BAffiliation%5D)">PubMed</a>
+<a href="https://orcid.org/0000-0001-6272-8783">ORCID</a></p>
+<h2 id="external-links">External Links</h2>
+<p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
+href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
+href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a></p>
+</div>
+<div class="main">
+<h1 id="research---code-and-resources">Research - Code and
+Resources</h1>
+<a id='okell_optimization_2022'></a>
+<h4>Optimization of <span>4D</span> <span>Combined</span>
+<span>Angiography</span> and <span>Perfusion</span> using
+<span>Radial</span> <span>Imaging</span> and <span>Arterial</span>
+<span>Spin</span> <span>Labeling</span></h4>
+<p><span class="citation" data-cites="okell_optimization_2022">Okell TW,
+Chiew M. 2022; <div class="csl-block">doi:<a
+href="https://doi.org/10.1101/2022.07.13.499856"
+role="doc-biblioref">10.1101/2022.07.13.499856</a></div></span></p>
+<p>Combined Angiography and Perfusion using Radial Imaging and Arterial
+Spin Labelling (CAPRIA) is method for simultaneously acquiring
+angiographic and perfusion data using an ASL preparation in a highly
+efficient manner. In this work, the CAPRIA method is extended to 3D
+acquisitions, with variable flip angle modulation and locally low-rank
+reconstruction for improved SNR and image fidelity.</p>
+<ul>
+<li><a href="https://github.com/tomokell/capria_tools">Reconstruction
+tools</a></li>
+</ul>
+<hr />
+<a id='graedel_ultrahigh_2022'></a>
+<h4>Ultrahigh <span>Resolution</span> <span class="nocase">fMRI</span>
+at <span>7T</span> <span>Using</span>
+<span>Radial</span>-<span>Cartesian</span> <span>TURBINE</span>
+<span>Sampling</span></h4>
+<p><span class="citation" data-cites="graedel_ultrahigh_2022">Graedel
+NN, Miller KL, Chiew M. <em>Magnetic Resonance in Medicine</em> 2022;
+88(5):2058–2073<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.29359"
+role="doc-biblioref">10.1002/mrm.29359</a></div></span></p>
+<p>Hybrid radial-Cartesian 3D “TURBINE” sampling is used here to acquire
+ultra-high isotropic resolution fMRI data at 7T. Isotropic slab datasets
+were acquired at 0.67 mm isotropic resolution over visual and motor
+cortices during block-design flashing checkerboard or fingertapping
+tasks respectively. Anisotropic whole-brain data were also acquired, at
+0.8x0.8x2.0 mm<span class="math inline"><sup>3</sup></span> resolution.
+Reconstruction was performed using a temporal smoothing constraint to
+preserve spatial fidelity, and resulted in high-fidelity,
+minimally-distorted images with excellent spatial specificity. These
+high-resolution data also preliminarily found negative BOLD responses in
+sulcal (possibly intravascular) regions immediately adjacent to
+positively activated gyri.</p>
+<ul>
+<li><a href="https://github.com/mchiew/highres_turbine_7T">Example
+reconstruction code</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.6619414">Raw Dataset
+1</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.6620395">Raw Dataset
+2</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.6620499">Raw Dataset
+3</a></li>
+</ul>
+<hr />
+<a id='shahdloo_model-based_2022'></a>
+<h4>Model-based dynamic off-resonance correction for improved
+accelerated <span class="nocase">fMRI</span> in awake behaving nonhuman
+primates</h4>
+<p><span class="citation"
+data-cites="shahdloo_model-based_2022">Shahdloo M, Schüffelgen U, Papp
+D, Miller KL, Chiew M. <em>Magnetic Resonance in Medicine</em> 2022;
+87(6):2922–2932<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.29167"
+role="doc-biblioref">10.1002/mrm.29167</a></div></span></p>
+<p>Here a model-based approach to estimating and correcting for strong,
+dynamic off-resonance effects in awake behaving non-human primates is
+presented. Dynamic field fluctuations are modelled as first-order
+spatial pertubations, and a GRAPPA-operator formalism is used to solve
+the dynamic estimation problem as a linear encoding shift, based on EPI
+three-line navigators. This allows for correction of acquired k-space
+data relative to the reference calibration data used to estimate
+simultaneous multi-slice reconstruction kernels, reducing residual
+ghosting/aliasing artefacts and producing more temporally stable
+time-series data.</p>
+<ul>
+<li><a href="https://github.com/shahdloo/nhp_recon">Code
+repository</a></li>
+</ul>
+<hr />
+<a id='chen_improving_2021'></a>
+<h4>Improving robustness of <span>3D</span> multi-shot <span>EPI</span>
+by structured low-rank reconstruction of segmented <span>CAIPI</span>
+sampling for <span class="nocase">fMRI</span> at <span>7T</span></h4>
+<p><span class="citation" data-cites="chen_improving_2021">Chen X, Wu W,
+Chiew M. 2021; <div class="csl-block">doi:<a
+href="https://doi.org/10.1101/2021.08.19.457024"
+role="doc-biblioref">10.1101/2021.08.19.457024</a></div></span></p>
+<p>This work employs Hankel-structured low-rank matrix recovery for
+multi-shot 3D EPI at 7T, to improve robustness to
+physiologically-induced inter-shot phase fluctuations. The low-rank
+constraint is enforced using a convex nuclear norm penalty, and
+optimisation is performed with the alternating direction method of
+multipliers (ADMM).</p>
+<ul>
+<li><a href="https://github.com/XChen-p/Muitishot-EPI">Reconstruction
+code</a></li>
+</ul>
+<hr />
+<a id='clarke_uncertainty_2022'></a>
+<h4>Uncertainty in denoising of <span>MRSI</span> using low-rank
+methods</h4>
+<p><span class="citation" data-cites="clarke_uncertainty_2022">Clarke
+WT, Chiew M. <em>Magnetic Resonance in Medicine</em> 2022;
+87(2):574–588<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.29018"
+role="doc-biblioref">10.1002/mrm.29018</a></div></span></p>
+<p>Low-rank denoising methods have become increasingly popular for MRSI
+data, but in this work we demonstrate that uncertainty in metabolite
+concentrations is often under-estimated after non-linear denoising
+operations. We propose a more accurate uncertainty estimate based on a
+boot-strap estimation procedure using an analytic formulation for the
+covariance of the denoised data, and also explore the use of Stein’s
+unbiased risk estimate for automatic parameter selection using soft and
+hard-thresholding spectral non-linearities.</p>
+<ul>
+<li><a
+href="https://git.fmrib.ox.ac.uk/wclarke/low-rank-denoising-uncertainty">Code
+for reproducing figures</a></li>
+<li><a
+href="https://git.fmrib.ox.ac.uk/wclarke/low-rank-denoising-tools">Denoising
+tools</a></li>
+</ul>
+<hr />
+<a id='mason_subspace-constrained_2021'></a>
+<h4>Subspace-constrained approaches to low-rank <span
+class="nocase">fMRI</span> acceleration</h4>
+<p><span class="citation"
+data-cites="mason_subspace-constrained_2021">Mason HT, Graedel NN,
+Miller KL, Chiew M. <em>NeuroImage</em> 2021; 238:118235<div
+class="csl-block">doi:<a
+href="https://doi.org/10.1016/j.neuroimage.2021.118235"
+role="doc-biblioref">10.1016/j.neuroimage.2021.118235</a></div></span></p>
+<p>This work explores different approaches for subspace constrained,
+low-rank fMRI reconstruction of accelerated (under-sampled) data.
+Various L2-constraints are investigated, and comparisons to the original
+(rank-constrained) k-t FASTER method are performed.</p>
+<ul>
+<li><a
+href="https://github.com/harrytmason/constrained-lowrank-recon">Reconstruction
+code</a></li>
+</ul>
+<hr />
+<a id='schauman_set_2021'></a>
+<h4>The <span>Set</span> <span>Increment</span> with
+<span>Limited</span> <span>Views</span> <span>Encoding</span>
+<span>Ratio</span> (<span>SILVER</span>) <span>Method</span> for
+<span>Optimizing</span> <span>Radial</span> <span>Sampling</span> of
+<span>Dynamic</span> <span>MRI</span></h4>
+<p><span class="citation" data-cites="schauman_set_2021">Schauman SS,
+Okell TW, Chiew M. 2021; <div class="csl-block">doi:<a
+href="https://doi.org/10.1101/2020.06.25.171017"
+role="doc-biblioref">10.1101/2020.06.25.171017</a></div></span></p>
+<p>In this work, the radial spoke angular increment for dynamic radial
+MRI is min-max optimised for multiple reconstruction windows. Optimising
+for a small set of desired windows (temporal resolutions) retains the
+flexibility of golden-ratio based increments, while achieving more
+uniform k-space coverage and higher SNR image reconstruction.</p>
+<ul>
+<li><a href="https://github.com/SophieSchau/SILVER">Code
+Repository</a></li>
+</ul>
+<hr />
+<a id='hess_accelerated_2021'></a>
+<h4>Accelerated calibrationless parallel transmit mapping using joint
+transmit and receive low-rank tensor completion</h4>
+<p><span class="citation" data-cites="hess_accelerated_2021">Hess AT,
+Dragonu I, Chiew M. <em>Magnetic Resonance in Medicine</em> 2021;
+86(5):2454–2467<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.28880"
+role="doc-biblioref">10.1002/mrm.28880</a></div></span></p>
+<p>This work introduces a method for highly accelerated relative
+parallel transmit mapping, by leveraging information across receive
+channels and transmit channels simultaneously through the use of a
+low-rank tensor representation. This approach enables a considerable
+speedup of relative transmit mapping acquisitions, by reconstructing
+with high fidelity under-sampling factors up to 8x.</p>
+<ul>
+<li><a href="https://github.com/mchiew/txlr/archive/main.zip">Download
+recon code</a></li>
+<li><a
+href="https://github.com/mchiew/txlr_paper/archive/main.zip">Download
+code for generating results and figures from the paper</a></li>
+<li><a href="https://github.com/mchiew/txlr">Github - recon
+code</a></li>
+<li><a href="https://github.com/mchiew/txlr_paper">Github - code for
+generating results and figures from the paper</a></li>
+<li><a href="https://doi.org/10.5287/bodleian:o011mPAQB">Download
+data</a></li>
+</ul>
+<hr />
+<a id='schauman_highly_2020'></a>
+<h4>Highly accelerated vessel-selective arterial spin labeling
+angiography using sparsity and smoothness constraints</h4>
+<p><span class="citation" data-cites="schauman_highly_2020">Schauman SS,
+Chiew M, Okell TW. <em>Magnetic Resonance in Medicine</em> 2020;
+83(3):892–905<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.27979"
+role="doc-biblioref">10.1002/mrm.27979</a></div></span></p>
+<p>In this paper, we developed a reconstruction of highly under-sampled
+vessel-encoded ASL angiography, leveraging the enhanced spatial sparsity
+of individual vessel images, and smoothness of the angiographic temporal
+dynamics. By leveraging the improved spatial sparsity of the
+vessel-decoded images, the proposed reconstruction was able to recover
+vessel-selective information <em>for free</em>, with no acquisition time
+penalty or loss of fidelty compared to non-vessel encoded ASL
+angiography.</p>
+<ul>
+<li><a href="https://github.com/SophieSchau/Accelerated_VEASL">Recon
+code</a></li>
+</ul>
+<hr />
+<a id='chiew_improved_2019'></a>
+<h4>Improved statistical efficiency of simultaneous multi-slice <span
+class="nocase">fMRI</span> by reconstruction with spatially adaptive
+temporal smoothing</h4>
+<p><span class="citation" data-cites="chiew_improved_2019">Chiew M,
+Miller KL. <em>NeuroImage</em> 2019; 203:116165<div
+class="csl-block">doi:<a
+href="https://doi.org/10.1016/j.neuroimage.2019.116165"
+role="doc-biblioref">10.1016/j.neuroimage.2019.116165</a></div></span></p>
+<p>Reconstruction of simultaneous multi-slice EPI data using temporal
+smoothing regularisation to reduce noise amplification (g-factors) at
+the cost of reduced temporal degrees of freedom, for a net improvement
+in statistical and tSNR efficiency. The code provided handles arbitrary
+slice and in-plane acceleration factors, and arbitrary, time-dependent
+sampling patterns (CAIPI shifts). Calculation of g-factors, effective
+degrees of freedom, and reconstruction efficiency are also provided.</p>
+<ul>
+<li><a href="docs/sms_smoothing.tar.gz">Download Recon Code</a></li>
+</ul>
+<hr />
+<a id='chiew_recovering_2018'></a>
+<h4>Recovering task <span class="nocase">fMRI</span> signals from highly
+under-sampled data with low-rank and temporal subspace constraints.</h4>
+<p><span class="citation" data-cites="chiew_recovering_2018">Chiew M,
+Graedel NN, Miller KL. <em>NeuroImage</em> 2018; 174:97–110<div
+class="csl-block">doi:<a
+href="https://doi.org/10.1016/j.neuroimage.2018.02.062"
+role="doc-biblioref">10.1016/j.neuroimage.2018.02.062</a></div></span></p>
+<p>This is a method for including task-fMRI design information in the
+image reconstruction process. It combines low-rank and temporal subspace
+constraints, or in another sense, performs a PCA/GLM on the
+under-sampled data.</p>
+<ul>
+<li><a href="docs/ktFASTER_constrained.tar.gz">Download Recon
+Code</a></li>
+</ul>
+<hr />
+<a id='chiew_accelerating_2016'></a>
+<h4>Accelerating functional <span>MRI</span> using fixed-rank
+approximations and radial-cartesian sampling.</h4>
+<p><span class="citation" data-cites="chiew_accelerating_2016">Chiew M,
+Graedel NN, Mcnab JA, Smith SM, Miller KL. <em>Magnetic resonance in
+medicine</em> 2016; 76(6):1825–1836<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.26079"
+role="doc-biblioref">10.1002/mrm.26079</a></div></span></p>
+<p>This work generalises the k-t FASTER approach for rank-constrained
+FMRI data reconstruction by permitting more general linear encoding of
+the imaging data, including non-Cartesian (e.g. radial) sampling
+trajectories and coil sensitivity encoding.</p>
+<ul>
+<li><a href="docs/iht_ms2.tar.gz">Download Recon Code</a></li>
+</ul>
+<hr />
+<a id='chiew_k-t_2015'></a>
+<h4>K-t <span>FASTER</span>: <span>Acceleration</span> of functional
+<span>MRI</span> data acquisition using low rank constraints.</h4>
+<p><span class="citation" data-cites="chiew_k-t_2015">Chiew M, Smith SM,
+Koopmans PJ, Graedel NN, Blumensath T, Miller KL. <em>Magnetic resonance
+in medicine</em> 2015; 74(2):353–364<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.25395"
+role="doc-biblioref">10.1002/mrm.25395</a></div></span></p>
+<p>This project used low-rank matrix completion or matrix recovery
+techniques to reconstruct under-sampled FMRI data. This was motivated by
+the low-dimensional structure often enforced by FMRI analysis methods,
+like in PCA dimensionality reductions or ICA decompositions, but
+leveraged here to constrain image reconstruction. Here, we use an
+iterative hard thresholding and matrix shrinkage algorithm to recover
+Cartesian sampled FMRI data with 4-fold under-sampling.</p>
+<ul>
+<li><a href="docs/iht_ms.tar.gz">Download Recon Code</a></li>
+</ul>
+</div>
+</body>
+</html>

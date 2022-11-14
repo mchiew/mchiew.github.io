@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>gfactor_vis</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="include/pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="nav">
+<h2 id="mark-chiew">Mark Chiew</h2>
+<p><a href="index.html">Home</a> <a href="Group.html">Group</a> <a
+href="Publications.html">Publications</a> <a
+href="Research.html">Research</a> <a href="Teaching.html">Teaching</a>
+<a href="Tools.html">Tools</a> <a
+href="Visualisations.html">Visualisations</a></p>
+<h2 id="curriculum-vitae">Curriculum Vitae</h2>
+<p><a href="CV.html">CV (html)</a> <a href="docs/CV-mchiew.pdf">CV
+(pdf)</a> <a
+href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
+Scholar</a> <a
+href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%20Name%5D%20AND%20(Toronto%5BAffiliation%5D%20OR%20Oxford%5BAffiliation%5D)">PubMed</a>
+<a href="https://orcid.org/0000-0001-6272-8783">ORCID</a></p>
+<h2 id="external-links">External Links</h2>
+<p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
+href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
+href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a></p>
+</div>
+<div class="main">
+<h1 id="noise-amplification-in-linear-systems">Noise Amplification in
+Linear Systems</h1>
+<h2 id="application-to-sense-parallel-imaging-in-mri">Application to
+SENSE Parallel Imaging in MRI</h2>
+<hr />
+<script type="text/javascript" src="include/d3.min.js"></script>
+<div class="wrapper">
+<div class="input">
+Noise Samples:
+<input type="range" id="noise-pts"  min="100" max="5000" step="100" value="1000"/>
+</div>
+<div class="input">
+Noise Variance:
+<input type="range" id="noise-var"  min="0.01" max="0.05" step="0.001" value="0.025"/>
+</div>
+<div class="input">
+Noise Covariance:
+<input type="range" id="noise-cov"  min="-0.99" max="0.99" step="0.01" value="0"/>
+</div>
+<div class="input">
+<input type="checkbox" id="margins-checkbox" checked/> Coil Noise
+Margins
+</div>
+<div class="input">
+<input type="checkbox" id="noise-checkbox" checked/> Noise Samples
+</div>
+</div>
+<svg id="container">
+</svg>
+<script type="text/javascript" src="include/gfactor_vis.js"></script>
+<p>This interactive visualization demonstrates how noise is transformed
+in a linear system, for a geometric perspective on noise behaviour, in a
+toy example R=2 SENSE parallel imaging reconstruction. The visualization
+consists of two panels: on the left, coil vectors, a target voxel and
+its projections onto the coil vectors are shown in the abstract 2D space
+representing the possible values of the voxels (A,B). These illustrate
+how 2 measurement vectors constrain the solution of a 2D unknown (A,B).
+Also shown are noise characteristics that result from the application of
+these constraints (by inverting the system), and illustrates how input
+noise is transformed and amplified through solving linear reconstruction
+problems. On the right, locations of the voxels (A,B), and schematic
+coil elements and sensitivities representing a physical interpretation
+of the sensitivity vectors is shown.</p>
+<p>The interactive components of this visualization are:</p>
+<dl>
+<dt>Noise Samples slider</dt>
+<dd>
+controls how many simulated noise samples to show
+</dd>
+<dt>Noise Variance slider</dt>
+<dd>
+controls the scaling of the diagonal entries of the 2x2 coil noise
+covariance matrix
+</dd>
+<dt>Noise Covariance slider</dt>
+<dd>
+controls the scaling of the off-diagonal entries of the 2x2 coil noise
+covariance matrix
+</dd>
+<dt>Coil Noise Margins checkbox</dt>
+<dd>
+toggles the full-width at tenth maximum coil noise margins
+</dd>
+<dt>Noise Samples checkbox</dt>
+<dd>
+toggles whether noise information is shown on the visualization
+</dd>
+<dt>Black dot</dt>
+<dd>
+draggable, represents the true value of the voxels (A,B) in the 2D voxel
+space
+</dd>
+<dt>Coil vectors</dt>
+<dd>
+draggable, thin solid blue or orange lines representing the sensitivity
+vectors for coils 1 and 2
+</dd>
+<dt>Coil elements</dt>
+<dd>
+draggable, thick “coils” rotating around a simulated FOV on the
+right-hand panel
+</dd>
+</dl>
+<p>This simulation allows you to independently control coil
+sensitivities and coil noise covariance characteristics, which are not
+typically independent degrees of freedom in realistic MR recieve coil
+arrays. However, with this toy example, we can provide some intuition
+and insight into some features of parallel imaging reconstructions:</p>
+<ul>
+<li>Why the co-linearity of coil sensitivities can lead to poor
+performance and massive noise amplification</li>
+<li>We can see why, even though both voxels alias onto one another,
+g-factor noise amplification is often asymmetric, affecting one voxel
+more than the other</li>
+<li>Even when the input coil noise has no off-diagonal covariance
+(i.e. independent noise on each channel), voxel-wise correlations in the
+noise will result (when the coil sensitivities are not orthogonal)</li>
+<li>It is possible to have significantly improved noise performance in a
+system with high input noise covariance and highly co-linear coils
+(better than a system with no input off-diagonal covariance and
+orthogonal coils!)</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tools</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="include/pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="nav">
+<h2 id="mark-chiew">Mark Chiew</h2>
+<p><a href="index.html">Home</a> <a href="Group.html">Group</a> <a
+href="Publications.html">Publications</a> <a
+href="Research.html">Research</a> <a href="Teaching.html">Teaching</a>
+<a href="Tools.html">Tools</a> <a
+href="Visualisations.html">Visualisations</a></p>
+<h2 id="curriculum-vitae">Curriculum Vitae</h2>
+<p><a href="CV.html">CV (html)</a> <a href="docs/CV-mchiew.pdf">CV
+(pdf)</a> <a
+href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
+Scholar</a> <a
+href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%20Name%5D%20AND%20(Toronto%5BAffiliation%5D%20OR%20Oxford%5BAffiliation%5D)">PubMed</a>
+<a href="https://orcid.org/0000-0001-6272-8783">ORCID</a></p>
+<h2 id="external-links">External Links</h2>
+<p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
+href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
+href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a></p>
+</div>
+<div class="main">
+<h1 id="tools">Tools</h1>
+<h2 id="image-reconstruction-tools-matlab">Image Reconstruction Tools
+(MATLAB)</h2>
+<hr />
+<p>Hosted on <a
+href="https://github.com/mchiew/recon-tools-matlab">Github</a>, a set of
+tools for MR image reconstruction, including the encoding operators <a
+href="#MR_Linear_Encoding_Operators">below</a>, as well as operators for
+sensitivity encoding and B0/off-resonance encoding using multi-frequency
+interpolation. Included in the <code>recon-tools-matlab</code>
+repository are also various functions for iterative and constrained
+image reconstruction, which includes approaches based on ADMM, the
+Chambolle-Pock primal-dual algorithm, FISTA, POGM, and Bregman
+methods.</p>
+<h2 id="mr-linear-encoding-operators">MR Linear Encoding Operators</h2>
+<hr />
+<p>This is a MATLAB-based set of classes that define linear encoding
+forward operators for MR imaging. These are primarily useful in
+iterative reconstruction algorithms. The classes implement forward and
+adjoint transforms, and for the non-Cartesian cases, they implement
+Toeplitz embedding for faster iterative evaluation. The following
+classes are included:</p>
+<dl>
+<dt><code>xfm_FFT.m</code></dt>
+<dd>
+FFT-based Cartesian sampling, with coil sensitivies and B0 inhomogeneity
+effects
+</dd>
+<dt><code>xfm_NUFFT.m</code></dt>
+<dd>
+NUFFT-based non-Cartesian sampling, with Toeplitz embedding and
+coil-sensitivity encoding (uses J. Fessler’s NUFFT)
+</dd>
+<dt><code>xfm_DFT.m</code></dt>
+<dd>
+DFT-based non-Cartesian sampling, with Toeplitz embedding and
+coil-sensitivity encoding (no external dependencies, not recommended for
+3D problems)
+</dd>
+</dl>
+<ul>
+<li><a href="docs/encoding_transforms.tar.gz">Download Encoding
+Operators</a></li>
+</ul>
+<h2 id="grappa-reconstruction-tools">GRAPPA Reconstruction Tools</h2>
+<hr />
+<p>These are MATLAB-based tools for performing 2D or 3D GRAPPA parallel
+imaging reconstructions, estimating GRAPPA g-factor maps, and
+simultaneous multi-slice unaliasing GRAPPA methods. These use and extend
+the same framework as the GRAPPA tutorial provided here, and should all
+be completely self-contained without any external dependencies. Included
+are:</p>
+<dl>
+<dt><code>grappa/grappa.m</code></dt>
+<dd>
+2D or 3D regular GRAPPA reconstruction
+</dd>
+<dt><code>grappa/grappa_gfactor.m</code></dt>
+<dd>
+Same as above, but performs unaliasing in image space, and can provide
+analytical g-factor noise amplification maps
+</dd>
+<dt><code>slice-grappa/sg.m</code></dt>
+<dd>
+Slice-GRAPPA simultaneous multi-slice unaliasing
+</dd>
+<dt><code>slice-grappa/spsg.m</code></dt>
+<dd>
+Split-Slice (LeakBlock) GRAPPA simultaneous multi-slice unaliasing
+</dd>
+</dl>
+<ul>
+<li><a href="docs/grappa-tools.zip">Download GRAPPA Recon Tools</a></li>
+</ul>
+<h2 id="sparse-and-regularised-mr-image-reconstruction">Sparse and
+Regularised MR Image Reconstruction</h2>
+<hr />
+<p>These are various tools for solving sparse and regularised MR image
+reconstruction problems, using first order iterative methods. The code
+is written to work with the encoding operators above. Tools for solving
+the following problems are included here:</p>
+<dl>
+<dt>L2 finite-difference regularised SENSE</dt>
+<dd>
+conjugate gradient solver
+</dd>
+<dt>Synthesis-based compressed sensing (L1 constraint)</dt>
+<dd>
+fast iterative soft thresholding algorithm (FISTA)
+</dd>
+<dt>Spatio-temproal total variation compressed sensing</dt>
+<dd>
+fast gradient projection
+</dd>
+<dd>
+split-Bregman iterations
+</dd>
+<dt>Spatio-temporal second order total generalised variation
+regularisation</dt>
+<dd>
+Chambolle-Pock primal-dual method
+</dd>
+</dl>
+<ul>
+<li><a href="docs/image_recon.tar.gz">Download Sparse Recon
+Tools</a></li>
+</ul>
+<dl>
+<dt>Patch-based sparse dictionary learning for under-sampled MR image
+reconstruction.</dt>
+<dd>
+Fully self-contained package
+</dd>
+<dd>
+k-SVD and orthogonal matching pursuit for dictionary learning and sparse
+coding.
+</dd>
+</dl>
+<ul>
+<li><a href="docs/patch-dictionary-learning.tar.gz">Download Patch
+Dictionary Learning Example</a></li>
+</ul>
+<h2 id="dynamic-k-t-mr-image-reconstruction">Dynamic k-t MR Image
+Reconstruction</h2>
+<hr />
+<p>This is a simple example of a sensitivity encoded, non-Cartesian
+under-sampled k-t MRI reconstruction problem. Examples include both
+reconstructions using linear constraints (L2-based finite differences)
+and non-linear low-rank constraints (using convex singular value soft
+thresholding and heuristic, non-convex hard thresholding approaches).
+The examples are written to work with the MR linear encoding operators
+that can be found above. Included in the example:</p>
+<dl>
+<dt>Linear reconstructions</dt>
+<dd>
+conjugate gradient (cg) SENSE
+</dd>
+<dd>
+cg SENSE with L2- spatio-temporal finite difference regularisation
+</dd>
+<dt>Non-linear low-rank reconstructions</dt>
+<dd>
+singular value soft-thresholding (convex)
+</dd>
+<dd>
+hard thresholding with shrinkage (non-convex)
+</dd>
+</dl>
+<ul>
+<li><a href="docs/low-rank-reconstruction.tar.gz">Download Dynamic Recon
+Examples</a></li>
+</ul>
+</div>
+</body>
+</html>
