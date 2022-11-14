@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -28,15 +33,15 @@ href="Research.html">Research</a> <a href="Teaching.html">Teaching</a>
 <a href="Tools.html">Tools</a> <a
 href="Visualisations.html">Visualisations</a></p>
 <h2 id="curriculum-vitae">Curriculum Vitae</h2>
-<p><a href="CV.html">CV (html)</a> <a href="docs/CV-mchiew.pdf">CV
-(pdf)</a> <a
-href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
+<p><a href="CV.html">CV (html)</a> <a href="CV-mchiew.pdf">CV (pdf)</a>
+<a href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
 Scholar</a> <a
 href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%20Name%5D%20AND%20(Toronto%5BAffiliation%5D%20OR%20Oxford%5BAffiliation%5D)">PubMed</a>
 <a href="https://orcid.org/0000-0001-6272-8783">ORCID</a></p>
 <h2 id="external-links">External Links</h2>
 <p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
-href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
+href="https://sunnybrook.ca/research/team/member.asp?t=10&amp;m=1048&amp;page=527">SRI</a>
+<a href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
 href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a></p>
 </div>
 <div class="main">
@@ -48,8 +53,9 @@ Nottingham Biomedical Imaging Centre for Doctoral Training</h2>
 <p>A lecture on the relationship between MR imaging and the Fourier
 Transform, multi-coil arrays and parallel imaging.</p>
 <ul>
-<li><a href="docs/MultiCoil_SubNyquist">Slides (html)</a></li>
-<li><a href="docs/MultiCoil_SubNyquist.pdf">Slides (pdf)</a></li>
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/MultiCoil_SubNyquist.pdf">Fourier
+Transform and Parallel Imaging (pdf)</a></li>
 </ul>
 <h2 id="fsl-course">FSL Course</h2>
 <hr />
@@ -59,14 +65,12 @@ MRI basics and image formation, and diffusion imaging. These are based
 on original lectures by <a
 href="http://users.fmrib.ox.ac.uk/~karla">Karla Miller</a>.</p>
 <ul>
-<li><a href="docs/fsl_introMRI">Intro MRI (html, with
-animations)</a></li>
-<li><a href="docs/fsl_introMRI.pdf">Intro MRI (pdf, no
-animations)</a></li>
-<li><a href="docs/fsl_diffusion">Diffusion MRI (html, with
-animations)</a></li>
-<li><a href="docs/fsl_diffusion.pdf">Diffusion MRI (pdf, no
-animations)</a></li>
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/fsl_introMRI.pdf">Intro
+MRI (pdf)</a></li>
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/fsl_diffusion.pdf">Diffusion
+MRI (pdf)</a></li>
 </ul>
 <h2 id="fmrib-graduate-course">FMRIB Graduate Course</h2>
 <hr />
@@ -75,9 +79,7 @@ for incoming students and junior researchers that spans a wide range of
 topics, designed to be a broad overview of MRI principles in the context
 of neuroimaging. Weekly podcast-style lectures and tutorials cover:</p>
 <ol type="1">
-<li><a
-href="https://medium.com/the-echo-chamber/fmrib-graduate-physics-course-image-formation-tutorial-1-35ed6f065662">Image
-Formation</a></li>
+<li>Image Formation</li>
 <li>Signal and SNR</li>
 <li>Contrast Manipulation</li>
 <li>Fast Imaging: Artefacts and Distortion</li>
@@ -88,25 +90,23 @@ Formation</a></li>
 magnetic field gradients and how they relate to Fourier Transforms in MR
 imaging:</p>
 <ul>
-<li><a href="docs/GradientsPhaseMagnetizationLecture">Slides
-(html)</a></li>
-<li><a href="docs/GradientsPhaseMagnetizationLecture.pdf">Slides
-(pdf)</a></li>
 <li><a
-href="docs/Podcast1B-Gradients_Phase_Magnetisation.mp4">Video</a></li>
+href="https://github.com/mchiew/teaching-lectures/blob/main/GradientsPhaseMagnetizationLecture.pdf">Slides
+(pdf)</a></li>
 </ul>
 <p>A more advanced lecture giving a more concrete derivation of the role
 of magnetic field gradients and how they relate to Fourier Transforms in
 MR imaging:</p>
 <ul>
-<li><a href="docs/ImageFormationRevisited">Slides (html)</a></li>
-<li><a href="docs/ImageFormationRevisited.pdf">Slides (pdf)</a></li>
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/ImageFormationRevisited.pdf">Slides
+(pdf)</a></li>
 </ul>
 <p>A lecture on the nature of spatial resolution in MRI, and examples of
 ultra-high spatial resolution fMRI:</p>
 <ul>
-<li><a href="docs/UltraHighSpatialResolutionFMRI">Slides (html)</a></li>
-<li><a href="docs/UltraHighSpatialResolutionFMRI.pdf">Slides
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/UltraHighSpatialResolutionFMRI.pdf">Sjides
 (pdf)</a></li>
 </ul>
 <h2 id="conference-educational-lectures">Conference Educational
@@ -121,10 +121,10 @@ low-rank methods, and finally briefly discusses structured low-rank
 methods. This talk was presented during the weekend educational course
 on “Image Reconstruction” at ISMRM 2021.</p>
 <ul>
-<li><a href="docs/Syllabus_ISMRM2021.pdf">Syllabus</a></li>
-<li><a href="docs/LowRank_ISMRM2021.pdf">Slides</a></li>
-<li><a href="docs/LowRank_ISMRM2021.mp4">Video</a></li>
-<li><a href="docs/Transcript_ISMRM2021.txt">Transcript</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2021-ISMRM/Syllabus_ISMRM2021.pdf">Syllabus</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2021-ISMRM/LowRank_ISMRM2021.pdf">Slides</a></li>
 </ul>
 <h3 id="measuring-connectivity-with-resting-state-fmri">Measuring
 Connectivity with Resting State fMRI</h3>
@@ -132,17 +132,22 @@ Connectivity with Resting State fMRI</h3>
 resting state fMRI, in the weekend educational course “Connectivity:
 Structure &amp; Function” at ISMRM 2017.</p>
 <ul>
-<li><a href="docs/Syllabus_ISMRM2017.pdf">Syllabus</a></li>
-<li><a href="docs/Connectivity_ISMRM2017.pdf">Slides</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2017-ISMRM/Syllabus_ISMRM2017.pdf">Syllabus</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2017-ISMRM/Connectivity_ISMRM2017.pdf">Slides</a></li>
 </ul>
 <h3 id="compressed-sensing">Compressed Sensing</h3>
 <p>A brief overview of compressed sensing and applications to fMRI in
 the teaching session on “Highly Accelerated fMRI” at ESMRMB 2013.</p>
 <ul>
-<li><a href="docs/Syllabus_ESMRMB2013.pdf">Syllabus</a></li>
-<li><a href="docs/CS_ESMRMB2013.pdf">Slides</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2013-ESMRMB/Syllabus_ESMRMB2013.pdf">Syllabus</a></li>
+<li><a
+href="https://github.com/mchiew/conference-educationals/blob/main/2013-ESMRMB/CS_ESMRMB2013.pdf">Slides</a></li>
 </ul>
-<h2 id="tutorials-and-practicals">Tutorials and Practicals</h2>
+<h2 id="basic-image-reconstruction-tutorials">Basic Image Reconstruction
+Tutorials</h2>
 <hr />
 <h3 id="partial-fourier-reconstruction-tutorial">Partial Fourier
 Reconstruction Tutorial</h3>
@@ -152,9 +157,11 @@ the Homodyne/Margosian method, the iterative POCS method, and a general
 least squares approach using the phase-constrained virutal coil
 method.</p>
 <ul>
-<li><a href="docs/PartialFourier.html">Tutorial (html)</a></li>
-<li><a href="docs/PartialFourier.mlx">MATLAB Live Script</a></li>
-<li><a href="docs/PartialFourier.m">MATLAB m-file</a></li>
+<li><a
+href="http://htmlpreview.github.io/?https://github.com/mchiew/partial-fourier-tutorial/blob/main/PartialFourier.html">Tutorial
+(html)</a></li>
+<li><a href="https://github.com/mchiew/partial-fourier-tutorial">Github
+Repo</a></li>
 </ul>
 <h3 id="sense-parallel-imaging-tutorial">SENSE Parallel Imaging
 Tutorial</h3>
@@ -163,9 +170,11 @@ in MRI. It walks through the estimation of coil sensitivities, combining
 images from multiple coils, and reconstruction of under-sampled data
 using the SENSE algorithm.</p>
 <ul>
-<li><a href="docs/SENSE_tutorial.html">Tutorial (html)</a></li>
-<li><a href="docs/SENSE_tutorial.mlx">MATLAB Live Script</a></li>
-<li><a href="docs/SENSE_tutorial.m">MATLAB m-file</a></li>
+<li><a
+href="http://htmlpreview.github.io/?https://github.com/mchiew/SENSE-tutorial/blob/main/SENSE_tutorial.html">Tutorial
+(html)</a></li>
+<li><a href="https://github.com/mchiew/SENSE-tutorial">Github
+Repo</a></li>
 </ul>
 <h3 id="non-cartesian-image-reconstruction-tutorial">Non-Cartesian Image
 Reconstruction Tutorial</h3>
@@ -179,9 +188,12 @@ by computing gradients. The tutorial can be accessed from the link
 above, or downloaded directly below as a MATLAB live script or plain
 script.</p>
 <ul>
-<li><a href="docs/recon_tutorial_01.html">Tutorial (html)</a></li>
-<li><a href="docs/recon_tutorial_01.mlx">MATLAB Live Script</a></li>
-<li><a href="docs/recon_tutorial_01.m">MATLAB m-file</a></li>
+<li><a
+href="http://htmlpreview.github.io/?https://github.com/mchiew/non-cartesian-MRI-tutorial/blob/main/non_cartesian.html">Tutorial
+(html)</a></li>
+<li><a
+href="https://github.com/mchiew/non-cartesian-MRI-tutorial">Github
+Repo</a></li>
 </ul>
 <h3 id="grappa-parallel-imaging-tutorial">GRAPPA Parallel Imaging
 Tutorial</h3>
@@ -194,9 +206,11 @@ how you deal with boundary conditions, generating calibration matrices,
 and the fitting and application of kernel weights. Access the tutorial
 from the link above, or download it directly below.</p>
 <ul>
-<li><a href="docs/grappa-practical.html">Tutorial (html)</a></li>
-<li><a href="docs/grappa-practical.tar.gz">GRAPPA Tutorial
-Files</a></li>
+<li><a
+href="http://htmlpreview.github.io/?https://github.com/mchiew/grappa-tutorial/blob/main/grappa-practical.html">Tutorial
+(html)</a></li>
+<li><a href="https://github.com/mchiew/grappa-tutorial">Github
+Repo</a></li>
 </ul>
 </div>
 </body>

@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -28,15 +33,15 @@ href="Research.html">Research</a> <a href="Teaching.html">Teaching</a>
 <a href="Tools.html">Tools</a> <a
 href="Visualisations.html">Visualisations</a></p>
 <h2 id="curriculum-vitae">Curriculum Vitae</h2>
-<p><a href="CV.html">CV (html)</a> <a href="docs/CV-mchiew.pdf">CV
-(pdf)</a> <a
-href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
+<p><a href="CV.html">CV (html)</a> <a href="CV-mchiew.pdf">CV (pdf)</a>
+<a href="http://scholar.google.ca/citations?user=o8pzV3YAAAAJ">Google
 Scholar</a> <a
 href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%20Name%5D%20AND%20(Toronto%5BAffiliation%5D%20OR%20Oxford%5BAffiliation%5D)">PubMed</a>
 <a href="https://orcid.org/0000-0001-6272-8783">ORCID</a></p>
 <h2 id="external-links">External Links</h2>
 <p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
-href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
+href="https://sunnybrook.ca/research/team/member.asp?t=10&amp;m=1048&amp;page=527">SRI</a>
+<a href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
 href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a></p>
 </div>
 <div class="main">
@@ -81,7 +86,8 @@ coil-sensitivity encoding (no external dependencies, not recommended for
 </dd>
 </dl>
 <ul>
-<li><a href="docs/encoding_transforms.tar.gz">Download Encoding
+<li><a
+href="https://github.com/mchiew/recon-tools-matlab/tree/main/transforms">Encoding
 Operators</a></li>
 </ul>
 <h2 id="grappa-reconstruction-tools">GRAPPA Reconstruction Tools</h2>
@@ -112,7 +118,8 @@ Split-Slice (LeakBlock) GRAPPA simultaneous multi-slice unaliasing
 </dd>
 </dl>
 <ul>
-<li><a href="docs/grappa-tools.zip">Download GRAPPA Recon Tools</a></li>
+<li><a href="https://github.com/mchiew/grappa-tools">GRAPPA Recon
+Tools</a></li>
 </ul>
 <h2 id="sparse-and-regularised-mr-image-reconstruction">Sparse and
 Regularised MR Image Reconstruction</h2>
@@ -144,7 +151,7 @@ Chambolle-Pock primal-dual method
 </dd>
 </dl>
 <ul>
-<li><a href="docs/image_recon.tar.gz">Download Sparse Recon
+<li><a href="https://github.com/mchiew/recon-tools-matlab">Sparse Recon
 Tools</a></li>
 </ul>
 <dl>
@@ -159,8 +166,9 @@ coding.
 </dd>
 </dl>
 <ul>
-<li><a href="docs/patch-dictionary-learning.tar.gz">Download Patch
-Dictionary Learning Example</a></li>
+<li><a
+href="https://github.com/mchiew/sparse-dictionary-learning-MRI">Patch
+Dictionary Learning</a></li>
 </ul>
 <h2 id="dynamic-k-t-mr-image-reconstruction">Dynamic k-t MR Image
 Reconstruction</h2>
@@ -189,8 +197,9 @@ hard thresholding with shrinkage (non-convex)
 </dd>
 </dl>
 <ul>
-<li><a href="docs/low-rank-reconstruction.tar.gz">Download Dynamic Recon
-Examples</a></li>
+<li><a
+href="https://github.com/mchiew/dynamic-mri-reconstruction">Dynamic
+Recon Examples</a></li>
 </ul>
 </div>
 </body>
