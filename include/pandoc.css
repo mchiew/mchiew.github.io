@@ -397,6 +397,12 @@ table td {
   margin: 0 auto;
 }
 
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 450px) {
   body {
