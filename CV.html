@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -317,12 +322,8 @@ Institute, Toronto, Canada; Jun 2013</li>
 <hr />
 <h3 id="preprints">Preprints</h3>
 <ol type="1">
-<li><span class="citation" data-cites="okell_optimization_2022">Okell
-TW, <strong>Chiew M</strong>. Optimization of <span>4D</span>
-<span>Combined</span> <span>Angiography</span> and
-<span>Perfusion</span> using <span>Radial</span> <span>Imaging</span>
-and <span>Arterial</span> <span>Spin</span> <span>Labeling</span>,
-2022;</span></li>
+<li><span class="citation"
+data-cites="okell_optimization_2022"><strong>okell_optimization_2022?</strong></span></li>
 <li><span class="citation" data-cites="millard_tuning-free_2022">Millard
 C, <strong>Chiew M</strong>, Tanner J, Hess AT, Mailhe B. Tuning-free
 multi-coil compressed sensing <span>MRI</span> with
@@ -1712,7 +1713,7 @@ Past Member</li>
 </div>
 
 <div class="footer">
-Last updated: December 13, 2022
+Last updated: December 19, 2022
 </div>
 </body>
 </html>
