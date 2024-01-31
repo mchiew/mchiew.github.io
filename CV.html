@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -354,9 +359,11 @@ angiographic and perfusion imaging using arterial spin labeling,
 2024;</span></li>
 <li><span class="citation" data-cites="li_self-navigated_2024">Li Z,
 Miller KL, Chen X, <strong>Chiew M</strong>, Wu W. Self-navigated
-<span>3D</span> diffusion <span>MRI</span> using an optimized
-<span>CAIPI</span> sampling and structured low-rank reconstruction,
-2024;</span></li>
+<span>3D</span> multi-slab <span>EPI</span> for
+<span>SNR</span>-efficient high-resolution diffusion <span>MRI</span>,
+<em>International <span>Society</span> for <span>Magnetic</span>
+<span>Resonance</span> in <span>Medicine</span> <span>Annual</span>
+<span>Meeting</span></em> 2024;</span></li>
 <li><span class="citation" data-cites="shahdloo_dynamic_2023">Shahdloo
 M, Khalighinejad N, Priestley L, Rushworth M, <strong>Chiew M</strong>.
 Dynamic off-resonance correction improves functional image analysis in
@@ -609,6 +616,54 @@ of the <span>IEEE</span> <span>Engineering</span> in
 </ol>
 <h3 id="conference-abstracts">Conference Abstracts</h3>
 <ol type="1">
+<li><span class="citation" data-cites="li_self-navigated_2024">Li Z,
+Miller KL, Chen X, <strong>Chiew M</strong>, Wu W. Self-navigated
+<span>3D</span> multi-slab <span>EPI</span> for
+<span>SNR</span>-efficient high-resolution diffusion <span>MRI</span>,
+<em>International <span>Society</span> for <span>Magnetic</span>
+<span>Resonance</span> in <span>Medicine</span> <span>Annual</span>
+<span>Meeting</span></em> 2024;</span> <strong>(oral
+presentation)</strong></li>
+<li><span class="citation" data-cites="lipka_accelerated_2024">Lipka A,
+Sawiak S, Shen X, Emir UE, Özen A, <strong>Chiew M</strong>, Speth J,
+Chang D-Y, Jiang Z, Tamer G, Scarpelli M. Accelerated
+<span>Preclinical</span> <span>UHF</span> <span>Abdominal</span>
+<span>T1</span> <span>Mapping</span> using <span>Novel</span>
+<span>Rosette</span> <span>Ultrashort</span> <span>Echo</span>
+<span>Time</span> (<span>PETALUTE</span>), <em>International
+<span>Society</span> for <span>Magnetic</span> <span>Resonance</span> in
+<span>Medicine</span> <span>Annual</span> <span>Meeting</span></em>
+2024;</span> <strong>(oral power-pitch presentation)</strong></li>
+<li><span class="citation" data-cites="kadota_joint_2024">Kadota B,
+Millard C, <strong>Chiew M</strong>. Joint
+<span>Multi</span>-<span>Contrast</span> <span>Image</span>
+<span>Reconstruction</span> with
+<span>Self</span>-<span>Supervised</span> <span>Learning</span>,
+<em>International <span>Society</span> for <span>Magnetic</span>
+<span>Resonance</span> in <span>Medicine</span> <span>Annual</span>
+<span>Meeting</span></em> 2024;</span></li>
+<li><span class="citation"
+data-cites="millard_simultaneous_2024">Millard C, <strong>Chiew
+M</strong>. Simultaneous self-supervised reconstruction and denoising
+for low <span>SNR</span>, sub-sampled training data with
+<span>Robust</span> <span>SSDU</span>, <em>International
+<span>Society</span> for <span>Magnetic</span> <span>Resonance</span> in
+<span>Medicine</span> <span>Annual</span> <span>Meeting</span></em>
+2024;</span> <strong>(oral presentation)</strong></li>
+<li><span class="citation" data-cites="shen_motion_2024">Shen Q, Wu W,
+<strong>Chiew M</strong>, Ji Y, Woods J, Okell TW. Motion correction
+with subspace-based self-navigation for combined angiography, perfusion
+and structural imaging using <span>ASL</span>, <em>International
+<span>Society</span> for <span>Magnetic</span> <span>Resonance</span> in
+<span>Medicine</span> <span>Annual</span> <span>Meeting</span></em>
+2024;</span></li>
+<li><span class="citation" data-cites="beitone_fluctuating_2024">Beitone
+C, <strong>Chiew M</strong>, Miller KL, Bangerter NK, Lally PJ.
+Fluctuating <span>Equilibrium</span> <span>MR</span> with partial
+<span>RF</span> spoiling: A parallel contrast imaging technique,
+<em>International <span>Society</span> for <span>Magnetic</span>
+<span>Resonance</span> in <span>Medicine</span> <span>Annual</span>
+<span>Meeting</span></em> 2024;</span></li>
 <li><span class="citation" data-cites="chen_motion_2023">Chen X, Wu W,
 <strong>Chiew M</strong>. Motion <span>Compensated</span>
 <span>Structured</span> <span>Low</span>-rank
@@ -2113,7 +2168,7 @@ Past Member</li>
 </div>
 
 <div class="footer">
-Last updated: January 21, 2024
+Last updated: January 31, 2024
 </div>
 </body>
 </html>
