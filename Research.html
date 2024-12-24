@@ -8,15 +8,10 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -48,6 +43,28 @@ href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acq
 <div class="main">
 <h1 id="research---code-and-resources">Research - Code and
 Resources</h1>
+<a id='millard_clean_2024'></a>
+<h4>Clean <span>Self</span>-<span>Supervised</span> <span>MRI</span>
+<span>Reconstruction</span> from <span>Noisy</span>,
+<span>Sub</span>-<span>Sampled</span> <span>Training</span>
+<span>Data</span> with <span>Robust</span> <span>SSDU</span></h4>
+<p><span class="citation" data-cites="millard_clean_2024">Millard C,
+Chiew M. <em>Bioengineering</em> 2024; 11(12):1305<div
+class="csl-block">doi:<a
+href="https://doi.org/10.3390/bioengineering11121305"
+role="doc-biblioref">10.3390/bioengineering11121305</a></div></span></p>
+<p>This work extends the previous work on self-supervised image
+reconstruction by incorporating simulatneous self-supervised denoising.
+In this framework, “Robust SSDU”, the measured data is treated as both
+undersampled and noisy, and the recovery problem involves estimating
+missing samples, while also denoising the measured ones. Leveraging both
+the multiplicative and additive forms of Noisier2Noise, this framework
+provably recovers the underlying noise-free image in expectation.</p>
+<ul>
+<li><a href="https://github.com/charlesmillard/robust_ssdu">Code
+repository</a></li>
+</ul>
+<hr />
 <a id='chen_motion_2024'></a>
 <h4>Motion compensated structured low-rank reconstruction for
 <span>3D</span> multi-shot <span>EPI</span></h4>
@@ -377,7 +394,7 @@ Cartesian sampled FMRI data with 4-fold under-sampling.</p>
 </div>
 
 <div class="footer">
-Last updated: November 26, 2024
+Last updated: December 23, 2024
 </div>
 </body>
 </html>
