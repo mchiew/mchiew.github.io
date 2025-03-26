@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -47,14 +52,27 @@ Tutorials</h1>
 <hr />
 <h3
 id="mbp1400h-advanced-mri---multi-channel-signal-acquisition-and-image-reconstruction">MBP1400H:
-Advanced MRI - Multi-channel signal acquisition and image
-reconstruction</h3>
+Advanced MRI - Multi-Channel Signal Acquisition and Image
+Reconstruction</h3>
 <p>Lecture on multi-channel imaging in MRI, including sensitivty
 estimation, channel combination, parallel imaging (SENSE and GRAPPA),
 and noise propagation.</p>
 <ul>
 <li><a
 href="https://github.com/mchiew/teaching-lectures/blob/main/Multichannel.pdf">Slides
+(pdf)</a></li>
+</ul>
+<h3
+id="mbp1400h-advanced-mri---non-cartesian-sampling-and-image-reconstruction">MBP1400H:
+Advanced MRI - Non-Cartesian Sampling and Image Reconstruction</h3>
+<p>Lecture on non-Cartesian sampling in MRI, including discussion of
+point-spread-functions, reconstruction schemes such as direct
+pseudoinversion, gridding with density compensation, and iterative
+reconstructions using the NUFFT, and SNR properties of non-Cartesian
+trajectories.</p>
+<ul>
+<li><a
+href="https://github.com/mchiew/teaching-lectures/blob/main/NonCartesian.pdf">Slides
 (pdf)</a></li>
 </ul>
 <h2 id="university-of-oxford">University of Oxford</h2>
@@ -261,7 +279,7 @@ Repo</a></li>
 </div>
 
 <div class="footer">
-Last updated: March 19, 2025
+Last updated: March 26, 2025
 </div>
 </body>
 </html>
