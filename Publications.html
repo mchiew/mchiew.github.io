@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -79,13 +84,6 @@ angiography, perfusion and structural imaging</h4>
 class="csl-block">doi:<a
 href="https://doi.org/10.1101/2024.08.26.609650"
 role="doc-biblioref">10.1101/2024.08.26.609650</a></div></span></p>
-<h4>Few-shot learning for highly accelerated <span>3D</span>
-time-of-flight <span>MRA</span> reconstruction</h4>
-<p><span class="citation" data-cites="li_few-shot_2025">Li H,
-<strong>Chiew M</strong>, Dragonu I, Jezzard P, Okell TW. 2025; <div
-class="csl-block">doi:<a
-href="https://doi.org/10.1101/2025.04.14.648710"
-role="doc-biblioref">10.1101/2025.04.14.648710</a></div></span></p>
 <h4>Combined <span>Angiographic</span>, <span>Structural</span> and
 <span>Perfusion</span> <span>Radial</span> <span>Imaging</span> using
 <span>Arterial</span> <span>Spin</span> <span>Labeling</span></h4>
@@ -95,6 +93,13 @@ href="https://doi.org/10.1101/2025.04.29.651006"
 role="doc-biblioref">10.1101/2025.04.29.651006</a></div></span></p>
 <h2 id="section">2025</h2>
 <hr />
+<h4>Few-shot learning for highly accelerated <span>3D</span>
+time-of-flight <span>MRA</span> reconstruction</h4>
+<p><span class="citation" data-cites="li_few-shot_2025">Li H,
+<strong>Chiew M</strong>, Dragonu I, Jezzard P, Okell TW. <em>Magnetic
+Resonance in Medicine</em> n/a(n/a)<div class="csl-block">doi:<a
+href="https://doi.org/10.1002/mrm.70072"
+role="doc-biblioref">10.1002/mrm.70072</a></div></span></p>
 <h4>Learned k-space <span>Partitioning</span> for <span>Optimized</span>
 self-supervised <span>MRI</span> <span>Reconstruction</span></h4>
 <p><span class="citation" data-cites="conf_kadota_learned_2025">Kadota
@@ -128,14 +133,9 @@ R, Rushworth M, Khalighinejad N. <em>Science Advances</em> 2025;
 11(26):eads1236<div class="csl-block">doi:<a
 href="https://doi.org/10.1126/sciadv.ads1236"
 role="doc-biblioref">10.1126/sciadv.ads1236</a></div></span></p>
-<h4>Steady-state free precession for <span>T2</span>* relaxometry:
-<span>All</span> echoes in every readout with k-space aliasing</h4>
-<p><span class="citation" data-cites="lally_steady-state_nodate">Lally
-PJ, Jin Y, Huo Z, Beitone C, <strong>Chiew M</strong>, Matthews PM,
-Miller KL, Bangerter NK. <em>Magnetic Resonance in Medicine</em>
-n/a(n/a)<div class="csl-block">doi:<a
-href="https://doi.org/10.1002/mrm.30590"
-role="doc-biblioref">10.1002/mrm.30590</a></div></span></p>
+<h4>lally_steady-state_nodate?</h4>
+<p><span class="citation"
+data-cites="lally_steady-state_nodate"></span></p>
 <h4>Feasibility and comparison of <span>3D</span> modified rosette
 ultra-short echo time (<span>PETALUTE</span>) with conventional weighted
 acquisition in <span>31P</span>-<span>MRSI</span></h4>
@@ -588,7 +588,7 @@ href="docs/MECV_AAM.pdf">pdf</a></p>
 </div>
 
 <div class="footer">
-Last updated: September 02, 2025
+Last updated: September 11, 2025
 </div>
 </body>
 </html>
