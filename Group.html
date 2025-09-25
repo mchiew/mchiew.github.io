@@ -8,10 +8,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="include/pandoc.css" />
@@ -36,8 +41,6 @@ href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Chiew%2C%20Mark%5BFull%20Author%
 <h2 id="external-links">External Links</h2>
 <p><a href="https://medbio.utoronto.ca/faculty/chiew">UToronto</a> <a
 href="https://sunnybrook.ca/research/team/member.asp?t=10&amp;m=1048&amp;page=527">SRI</a>
-<a href="http://www.ndcn.ox.ac.uk/team/mark-chiew">NDCN</a> <a
-href="https://www.win.ox.ac.uk/research/physics-research/physics-groups/fmri-acquisition-and-reconstruction">WIN</a>
 <a href="http://github.com/mchiew">GitHub</a></p>
 </div>
 <div class="main">
@@ -151,7 +154,7 @@ style="width:800px;text-align:left;" alt="December 2019" />
 </div>
 
 <div class="footer">
-Last updated: September 16, 2025
+Last updated: September 25, 2025
 </div>
 </body>
 </html>
